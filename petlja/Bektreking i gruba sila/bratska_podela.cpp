@@ -33,6 +33,8 @@ int main()
 
 void nadjiMinRazliku(vector<double> &vrednosti, vector<bool> &podela, double zbir1, double zbir2, int i, double &minRazlika)
 {
+    /* true u nizu podela znaci da predmet pripada prvom bratu, a false da pripada drugom. Posto su na pocetku
+    svi elementi niza inicijalizovani na falsem na pocetku svi predmeti pripadaju drugom bratu. */
     minRazlika = min(minRazlika, fabs(zbir1 - zbir2));
     if (i == podela.size())
     {
