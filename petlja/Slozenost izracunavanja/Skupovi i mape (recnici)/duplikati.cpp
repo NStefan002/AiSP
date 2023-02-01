@@ -1,5 +1,5 @@
 #include <iostream>
-#include <map>
+#include <set>
 
 
 using namespace std;
@@ -9,12 +9,12 @@ int main()
     int n;
     cin >> n;
 
-    map<unsigned, unsigned> ipAdrese;
-    unsigned ip;
+    set<unsigned> ipAdrese;
     for (int i = 0; i < n; i++)
     {
+        unsigned ip;
         cin >> ip;
-        ipAdrese[ip]++;
+        ipAdrese.insert(ip);
     }
     
     cout << ipAdrese.size() << endl;
