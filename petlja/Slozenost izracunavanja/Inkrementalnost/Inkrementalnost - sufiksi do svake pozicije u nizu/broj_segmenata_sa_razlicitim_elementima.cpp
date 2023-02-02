@@ -34,7 +34,7 @@ int brSegmenata(vector<int>& a)
     // pamtimo koji su brojevi u trenutnom segmentu vec vidjeni
     unordered_map<int, bool> vecVidjen;
 
-    // validni brojevi su iz segmenta [l, b) 
+    // validni brojevi su iz segmenta [l, d) 
     int l = 0, d = 1;
     vecVidjen[a[0]] = true;
 
