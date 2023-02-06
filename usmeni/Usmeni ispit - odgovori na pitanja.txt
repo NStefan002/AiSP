@@ -1,0 +1,136 @@
+        MINIMALNI NIVO
+
+1.
+2.
+3.
+4.
+5.
+6. Slozenost nekih cestih oblika petlji:
+
+    O(n):
+    for (int i = 0; i < n; i++)
+        // kod sloenosti O(1)
+
+    for (int i = 0; i < n; i += 2)
+        // kod sloenosti O(1)
+    (slozenost je ista kao u prethodnom primeru samo se konstantni faktor razlikuje)
+
+    for (int i = 0, j = n - 1; i < j; i++, j--)
+        // kod sloenosti O(1)
+    (isto kao u prethodnom primeru)
+
+    O(n - m):
+    for (int i = m; i < n; i++)
+        // kod sloenosti O(1)
+
+    O(n^2):
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < n; j++)
+            // kod sloenosti O(1)
+
+    for (int i = 0; i < n; i++)
+        for (int j = i + 1; j < n; j++)
+            // kod sloenosti O(1)
+    (slozenost je ista kao u prethodnom primeru samo se konstantni faktor razlikuje)
+
+    O(mn):
+    for (int i = 0; i < m; i++)
+        for (int j = 0; j < n; j++)
+            // kod sloenosti O(1)
+
+    O(n^3):
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < n; j++)
+            for (int k = 0; k < n; k++)
+                // kod sloenosti O(1)
+
+    for (int i = 0; i < n; i++)
+        for (int j = i + 1; j < n; j++)
+            for (int k = j + 1; k < n; k++)
+                // kod sloenosti O(1)
+    (slozenost je ista kao u prethodnom primeru samo se konstantni faktor razlikuje)
+
+    O(m + n):
+    for (int i = 0; i < m; i++)
+        // kod sloenosti O(1)
+
+    for (int i = 0; i < n; i++)
+        // kod sloenosti O(1)
+
+    O(sqrt(n)):
+    for (int i = 0; i * i < n; i++)
+        // kod sloenosti O(1)
+
+    O(log(n)):
+    for (int i = 0; i < n; i *= 2)
+        // kod sloenosti O(1)
+
+    !! Voditi racuna o skrivenoj slozenosti !!
+
+
+7. Master teorema
+
+            |- TETA(n ^ log_b(a)), ako je log_b(a) > k
+    T(n) = -|- TETA(n ^ k * log(n)), ako je log_b(a) = k
+            |- TETA(n ^ k), ako je log_b(a) < k
+
+
+        OSNOVNI NIVO
+
+1. ./primeri/osnovni_nivo/1.cpp
+
+2.
+
+3.
+
+4.
+
+5. ./primeri/osnovni_nivo/5(maksimalni_zbir_segmenta).cpp
+
+6. ./primeri/osnovni_nivo/6(uvecavanje_segmenta).cpp
+
+7. ./primeri/osnovni_nivo/7(grupisanje_bliskih_vrednosti).cpp
+   ./primeri/osnovni_nivo/7(obrada_duplikata).cpp
+
+8. ./primeri/osnovni_nivo/8(anagrami).cpp
+
+9. ./primeri/osnovni_nivo/9(objedinjavanje_sortiranih_nizova).cpp
+
+11. ./primeri/osnovni_nivo/11(istorija_veb_pregledaca).cpp
+    ./primeri/osnovni_nivo/11(push_pop_rekonstrukcija).cpp
+    ./primeri/osnovni_nivo/11(uparenost_zagrada).cpp
+
+12. ./primeri/osnovni_nivo/12(duplikati).cpp
+    ./primeri/osnovni_nivo/12(tree_sort).cpp
+    ./primeri/osnovni_nivo/12(broj_razlicitih_duzina_duzi).cpp
+
+13. ./primeri/osnovni_nivo/13(prebrojavanje_reci).cpp
+    ./primeri/osnovni_nivo/13(broj_segmenata_sa_razlicitim_elementima).cpp
+    ./primeri/osnovni_nivo/13(segment_datog_zbira_u_nizu_celih_brojeva).cpp
+
+14. ./primeri/osnovni_nivo/14(poslednjih_k_linija).cpp
+    ./primeri/osnovni_nivo/14(maksimalna_bijekcija).cpp TODO
+    ./primeri/osnovni_nivo/14(segment_duzine_k_najveceg_proseka).cpp
+
+15.
+
+16. ./primeri/osnovni_nivo/16(zbir_k_najboljih).cpp
+    ./primeri/osnovni_nivo/16(sortiranje_brojeva).cpp
+
+17.
+
+18.
+
+19.
+
+20.
+
+21.
+
+22. ./primeri/osnovni_nivo/22(sve_varijacije).cpp
+    ./primeri/osnovni_nivo/22(svi_podskupovi_leksikografski).cpp
+
+23. ./primeri/osnovni_nivo/23(sledeca_kombinacija).cpp
+
+24. ./primeri/osnovni_nivo/24(sve_permutacije).cpp
+
