@@ -134,3 +134,14 @@
 
 24. ./primeri/osnovni_nivo/24(sve_permutacije).cpp
 
+25. ./primeri/osnovni_nivo/25(rasporedjivanje_n_dama_na_sahovskoj_tabli).cpp
+
+26. ./primeri/osnovni_nivo/26(bojenje_grafa_sa_tri_boje).cpp
+
+27. ./primeri/osnovni_nivo/27(fibonaci_memo).cpp
+    ./primeri/osnovni_nivo/27(fibonaci_dp).cpp
+
+28. ./primeri/osnovni_nivo/28(edit_rastojanje).cpp
+
+29. ./primeri/osnovni_nivo/29(broj_kombinacija_memo).cpp
+    ./primeri/osnovni_nivo/29(broj_kombinacija_dp).cpp
