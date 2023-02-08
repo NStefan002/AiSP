@@ -1,10 +1,52 @@
         MINIMALNI NIVO
 
-1.
-2.
-3.
+1. Induktivno-rekurzivna konstrukcija algoritma, u svom osnovnom obliku, podrazumeva
+   da se resenje problema vece dimenzije pronalazi tako sto umemo da resimo problem
+   istog oblika, ali manje dimenzije. Za pocetne dimenzije problema resenje racunamo
+   direktno (ne svodimo ga dalje na probleme manje dimenzije).
+
+2. Invarijanta petlje je logicki uslov koji povezuje promenljive i vazi tokom citavog
+   izvrsavanja petlje (neposredno pre ulaska u petlju, pre i nakon izvrsavanja svakog
+   koraka petlje i pre izlaska iz petlje).
+
+   <inicijalizacija promenljivih>
+   // ! vazi invarijanta !
+   while (<uslov>)
+   {
+       // ! vazi i uslov i invarijanta !
+       <telo petlje>
+       // ! vazi invarijanta !
+   }
+   // ne vazi uslov, vazi invarijanta
+
+3. Najcesce se razmatraju dve vrste slozenosti:
+        - vremenska slozenost
+        - prostorna (memorijska) slozenost
+
+   Cesto je sasvim u redu biti veoma grub u proceni i samo oceniti asimptotsko ponašanje
+   funkcije koja opisuje zavisnost izmedju potrebne kolicine resursa od date veličine
+   ulaza (obicno u najgorem slucaju), zanemarujuci konstantne faktore (npr. da li je jedan
+   program uvek dva puta sporiji od drugog nije bitno u ovakvim procenama, samo je bitno
+   da li kolicina resursa kod oba programa linearno zavisi od dimenzije ulaza).
+
+   Posto nas najcesce zanima samo gornja granica utrosenih resursa, koristi se O-notacija:
+   funkcija f je O(g) ako "f ne raste asimptotski brže od g" tj. ako postoji konstanta C
+   tako da je za svako n pocevsi od nekog n_0 važi da je f(n) <= C * g(n).
+
+   Pored О-notacije koriste se i Ω-notacija koja daje donju granicu ("f ne raste asimptotski
+   sporije od g") i θ-notacija koja daje precizan opis asimptotskog ponašanja ("f raste
+   asimptotski istom brzinom kao g").
 4.
-5.
+
+5. *nisam siguran sta se tacno trazi u zadatku
+   Neke ceste klase slozenosti i primeri algoritama koji spadaju u te klase:
+
+    - O(log(n)) binarna pretraga, pronalazak elementa u binarnom pretrazivackom stablu (balansiranom)
+    - O(n) ucitavanje niza elemenata, pronalazak elementa u nesortiranom nizu
+    - O(nlog(n)) napredni algoritmi za sortiranje
+    - O(2^n) generisanje kombninatornih objekata
+    - O(sqrt(n)), O(n^2), O(n^3) primeri se mogu naci u narednom zadatku
+
 6. Slozenost nekih cestih oblika petlji:
 
     O(n):
@@ -74,6 +116,10 @@
     T(n) = -|- TETA(n ^ k * log(n)), ako je log_b(a) = k
             |- TETA(n ^ k), ako je log_b(a) < k
 
+
+8. ./primeri/minimalni_nivo/8(Eratostenovo_sito).cpp
+
+25. ./primeri/minimalni_nivo/25(quick_sort).cpp
 
         OSNOVNI NIVO
 
