@@ -116,8 +116,10 @@
     T(n) = -|- TETA(n ^ k * log(n)), ako je log_b(a) = k
             |- TETA(n ^ k), ako je log_b(a) < k
 
+8. Neki od primera su uradjeni za naredni zadatak.
 
-8. ./primeri/minimalni_nivo/8(Eratostenovo_sito).cpp
+9. ./primeri/minimalni_nivo/9(Eratostenovo_sito).cpp
+   ./primeri/minimalni_nivo/9(prost_broj).cpp
 
 25. ./primeri/minimalni_nivo/25(quick_sort).cpp
 
@@ -139,6 +141,7 @@
    ./primeri/osnovni_nivo/7(obrada_duplikata).cpp
 
 8. ./primeri/osnovni_nivo/8(anagrami).cpp
+   ./primeri/osnovni_nivo/8(svodjenje_na_kanonski_oblik).cpp
 
 9. ./primeri/osnovni_nivo/9(objedinjavanje_sortiranih_nizova).cpp
 
