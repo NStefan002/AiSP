@@ -121,7 +121,33 @@
 9. ./primeri/minimalni_nivo/9(Eratostenovo_sito).cpp
    ./primeri/minimalni_nivo/9(prost_broj).cpp
 
+10. Ilustrovati na primeru najveci zbir prefiksa.
+    (../petlja/Slozenost izracunavanja/Inkrementalnost/Inkrementalnost zbira i proizvoda/najveci_zbir_prefiksa.cpp)
+
+11. Ilustrovati na primeru aritmeticki trougao.
+    (../petlja/Slozenost izracunavanja/Zamena iteracije formulom/aritmeticki_trougao.cpp)
+
+19. Hesiranje:
+    - koristi se za implementaciju hash mapa, skupova itd.
+    - omogucava efikasno pronalazenje elementa strukture podataka (O(1), uz malo veci konstanti faktor)
+    - dobra hash funkcija treba da bude brza (sto manji konstantni faktor) i da minimalizuje broj kolizija
+    - razresavanje kolizija:
+        1) odvojeno ulancavanje:
+            * na svakoj poziciji u hash tabeli se formira lista elemenata kod kojih je doslo do kolizije,
+            tabela se prosiruje kada liste dostignu odredjeni broj elemenata ili kada se popuni odredjeni
+            procenat tabele (ove stavke zavise od konkretne implementacije)
+        2) otvoreno adresiranje:
+            * elementi se smestaju iskljucivo u hash tabelu
+            * prilikom realokacije hash tabele hash kodovi se racunaju iz pocetka
+            *1) linearno popunjavanje (najcesce se koristi, dobre performanse za savremeni hardver, kes memoriju,
+            stvara sekundarne kolizije, kada je tabela malo vise popunjena pogorsavaju se performanse)
+            *2) kvadratno popunjavanje
+            *3) dvostruko hesiranje (dve hash funkcije)
+
 25. ./primeri/minimalni_nivo/25(quick_sort).cpp
+
+
+
 
         OSNOVNI NIVO
 
