@@ -110,11 +110,19 @@
     !! Voditi racuna o skrivenoj slozenosti !!
 
 
-7. Master teorema
+7. Master teorema:
+    Resenje rekurentne relacije T(n) = aT(n/b) + c * n^k, gde su
+    a i b celobrojne konstante vece ili jednake od 1, a c i k
+    pozitivne realne konstante
 
             |- TETA(n ^ log_b(a)), ako je log_b(a) > k
     T(n) = -|- TETA(n ^ k * log(n)), ako je log_b(a) = k
             |- TETA(n ^ k), ako je log_b(a) < k
+
+    ili:
+            |- TETA(n ^ k * log(n)), ako je log_b(a) = k
+    T(n) = -|
+            |- TETA(n ^ m), gde je m = max{log_b(a), k}
 
 8. Neki od primera su uradjeni za naredni zadatak.
 
